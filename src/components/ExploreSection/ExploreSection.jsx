@@ -1,57 +1,69 @@
-import React, { useState } from 'react';
-import './ExploreSection.css';
+import React, { useState } from "react";
+import "./ExploreSection.css";
 
 const ExploreSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
+  const goBack = () => setSelectedProject(null); // ⬅️ Back to project list
 
   const sections = [
     {
-      title: 'Dexo',
-      subtitle: 'Agency',
-      image: '/Screenshot 2025-10-13 124805.png',
-      link: 'https://www.dexoinnovation.com/',
+      title: "Dexo",
+      subtitle: "Agency",
+      image: "/Screenshot 2025-10-13 124805.png",
+      link: "https://www.dexoinnovation.com/",
     },
     {
-      title: 'Dexo',
-      subtitle: 'Academy',
-      image: '/Screenshot 2025-10-13 124939.png',
-      link: 'https://www.dexoacademy.com/',
+      title: "Dexo",
+      subtitle: "Academy",
+      image: "/Screenshot 2025-10-13 124939.png",
+      link: "https://www.dexoacademy.com/",
     },
     {
-      title: 'Online',
-      subtitle: 'News',
-      image: '/Screenshot 2025-10-13 125208.png',
-      link: 'https://valluvanadonline.com/',
+      title: "Online",
+      subtitle: "News",
+      image: "/Screenshot 2025-10-13 125208.png",
+      link: "https://valluvanadonline.com/",
     },
     {
-      title: 'Cart',
-      subtitle: 'Ecommerce',
-      image: 'https://ober-jekyll.netlify.app/assets/img/works/work1.jpg',
-      link: 'https://shop.mghomecart.com/home',
+      title: "Cart",
+      subtitle: "Ecommerce",
+      image: "https://ober-jekyll.netlify.app/assets/img/works/work1.jpg",
+      link: "https://shop.mghomecart.com/home",
     },
     {
-      title: 'Cloth',
-      subtitle: 'Uniform',
-      image: 'https://romosgarments.com/wp-content/uploads/2025/07/Romos-Icon-e1752513589489.png',
-      link: 'https://romosgarments.com/',
+      title: "Cloth",
+      subtitle: "Uniform",
+      image:
+        "https://romosgarments.com/wp-content/uploads/2025/07/Romos-Icon-e1752513589489.png",
+      link: "https://romosgarments.com/",
     },
     {
-      title: 'Hospital',
-      subtitle: 'Dental',
-      image: '\Screenshot 2025-10-20 103244.png',
-      link: 'https://docter-backend.vercel.app/',
+      title: "Hospital",
+      subtitle: "Dental",
+      image: "/Screenshot 2025-10-20 103244.png",
+      link: "https://docter-backend.vercel.app/",
+    },
+    {
+      title: "Cloth",
+      subtitle: "Ecommerce (Twilio OTP & Razorpay)",
+      image: "/Screenshot 2025-10-29 152718.png",
+      link: "https://mocca-store.vercel.app/",
+      video: "/Recording 2025-10-29 154431.mp4",
+      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
     },
   ];
 
   return (
     <div className="explore-section-wrapper">
-      {/* 🔹 Top button */}
-      
-
-      {/* 🔹 Existing grid */}
+      {/* 🔹 Project Grid */}
       <div className="explore-grid">
         {sections.map((section, index) => (
           <div className="explore-container" key={index}>
@@ -74,46 +86,94 @@ const ExploreSection = () => {
             <div className="explore-text">
               <h1>{section.title}</h1>
               <p>{section.subtitle}</p>
+              {section.video && (
+                <button
+                  className="video-btn"
+                  onClick={() => {
+                    setSelectedProject(section);
+                    openModal();
+                  }}
+                >
+                  🎬 Watch Demo
+                </button>
+              )}
             </div>
           </div>
         ))}
       </div>
-<div className="explore-topbar">
-        <button
-          className="next-projects-btn"
-          onClick={openModal}
-        >
+
+      {/* 🔹 Top bar button */}
+      <div className="explore-topbar">
+        <button className="next-projects-btn" onClick={openModal}>
           Next Projects →
         </button>
       </div>
+
+      {/* 🔹 Modal */}
       {isModalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
+          <div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
             <button className="modal-close-btn" onClick={closeModal}>
               ×
             </button>
-            <h2>Next Projects</h2>
-            <div className="modal-projects-grid">
-              {sections.map((section, idx) => (
-                <div className="modal-project-card" key={idx}>
-                  <img
-                    src={section.image}
-                    alt={section.title}
-                    className="modal-project-image"
-                  />
-                  <h3>{section.title}</h3>
-                  <p>{section.subtitle}</p>
-                  <a
-                    href={section.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="modal-project-link"
-                  >
-                    Visit
-                  </a>
+
+            {selectedProject && selectedProject.video ? (
+              <>
+                <h2>{selectedProject.title} Demo</h2>
+                <video
+                  className="project-video"
+                  controls
+                  autoPlay
+                  loop
+                  muted
+                >
+                  <source src={selectedProject.video} type="video/mp4" />
+                  Your browser does not support video playback.
+                </video>
+                <p className="project-note">{selectedProject.note}</p>
+
+                {/* ⬅️ Back Button */}
+                <button className="back-btn" onClick={goBack}>
+                  ← Back to Projects
+                </button>
+              </>
+            ) : (
+              <>
+                <h2>Next Projects</h2>
+                <div className="modal-projects-grid">
+                  {sections.map((section, idx) => (
+                    <div className="modal-project-card" key={idx}>
+                      <img
+                        src={section.image}
+                        alt={section.title}
+                        className="modal-project-image"
+                      />
+                      <h3>{section.title}</h3>
+                      <p>{section.subtitle}</p>
+                      <a
+                        href={section.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="modal-project-link"
+                      >
+                        Visit
+                      </a>
+                      {section.video && (
+                        <button
+                          className="small-demo-btn"
+                          onClick={() => setSelectedProject(section)}
+                        >
+                          🎬 Watch Demo
+                        </button>
+                      )}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            )}
           </div>
         </div>
       )}
