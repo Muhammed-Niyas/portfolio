@@ -32,17 +32,12 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-10-13 125208.png",
       link: "https://valluvanadonline.com/",
     },
-    {
-      title: "Cart",
-      subtitle: "Ecommerce",
-      image: "https://ober-jekyll.netlify.app/assets/img/works/work1.jpg",
-      link: "https://shop.mghomecart.com/home",
-    },
+    
     {
       title: "Cloth",
       subtitle: "Uniform",
       image:
-        "https://romosgarments.com/wp-content/uploads/2025/07/Romos-Icon-e1752513589489.png",
+        "/Screenshot 2025-11-07 175909.png",
       link: "https://romosgarments.com/",
     },
     {
@@ -58,6 +53,26 @@ const ExploreSection = () => {
       link: "https://mocca-store.vercel.app/",
       video: "/Recording 2025-10-29 154431.mp4",
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
+        {
+      title: "Home",
+      subtitle: "Home Deccor and interier",
+      image: "/Screenshot 2025-11-07 174852.png",
+      link: "https://starline-nine.vercel.app/",
+      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
+        {
+      title: "Product",
+      subtitle: "Portfolio Masal Product",
+      image: "/Screenshot 2025-11-07 175825.png",
+      link: "https://spices-lovat.vercel.app/",
+      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
+    {
+      title: "Cart",
+      subtitle: "Ecommerce",
+      image: "/Screenshot 2025-11-07 180534.png",
+      link: "https://shop.mghomecart.com/home",
     },
   ];
 
