@@ -33,13 +33,7 @@ const ExploreSection = () => {
       link: "https://valluvanadonline.com/",
     },
     
-    {
-      title: "Cloth",
-      subtitle: "Uniform",
-      image:
-        "/Screenshot 2025-11-07 175909.png",
-      link: "https://romosgarments.com/",
-    },
+
     {
       title: "Hospital",
       subtitle: "Dental",
@@ -60,6 +54,13 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-11-07 174852.png",
       link: "https://starline-nine.vercel.app/",
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
+        {
+      title: "Cloth",
+      subtitle: "Uniform",
+      image:
+        "/Screenshot 2025-11-07 175909.png",
+      link: "https://romosgarments.com/",
     },
         {
       title: "Product",
