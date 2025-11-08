@@ -56,7 +56,7 @@ const ExploreSection = () => {
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
     },
         {
-      title: "Cloth",
+      title: "cloth",
       subtitle: "Uniform",
       image:
         "/Screenshot 2025-11-07 175909.png",
