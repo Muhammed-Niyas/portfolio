@@ -32,12 +32,6 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-10-13 125208.png",
       link: "https://valluvanadonline.com/",
     },
-    
-
- 
-   
-    
-     
         {
       title: "Product",
       subtitle: "Portfolio Masal Product",
@@ -79,6 +73,12 @@ const ExploreSection = () => {
       subtitle: "Ecommerce",
       image: "/Screenshot 2025-11-07 180534.png",
       link: "https://shop.mghomecart.com/home",
+    },
+        {
+      title: "Agency",
+      subtitle: "Online",
+      image: "/Screenshot 2025-11-09 140400.png",
+      link: "https://www.sheconnect.qa/",
     },
   ];
 
