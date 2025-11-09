@@ -35,14 +35,7 @@ const ExploreSection = () => {
     
 
  
-    {
-      title: "Cloth",
-      subtitle: "Ecommerce (Twilio OTP & Razorpay)",
-      image: "/Screenshot 2025-10-29 152718.png",
-      link: "https://mocca-store.vercel.app/",
-      video: "/Recording 2025-10-29 154431.mp4",
-      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
-    },
+   
     
      
         {
@@ -50,6 +43,21 @@ const ExploreSection = () => {
       subtitle: "Portfolio Masal Product",
       image: "/Screenshot 2025-11-07 175825.png",
       link: "https://spices-lovat.vercel.app/",
+      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
+     {
+      title: "Cloth",
+      subtitle: "Ecommerce (Twilio OTP & Razorpay)",
+      image: "/Screenshot 2025-10-29 152718.png",
+      link: "https://mocca-store.vercel.app/",
+      video: "/Recording 2025-10-29 154431.mp4",
+      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
+       {
+      title: "Home",
+      subtitle: "Home Deccor and interier",
+      image: "/Screenshot 2025-11-07 174852.png",
+      link: "https://starline-nine.vercel.app/",
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
     },
        {
@@ -65,13 +73,7 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-10-20 103244.png",
       link: "https://docter-backend.vercel.app/",
     },
-        {
-      title: "Home",
-      subtitle: "Home Deccor and interier",
-      image: "/Screenshot 2025-11-07 174852.png",
-      link: "https://starline-nine.vercel.app/",
-      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
-    },
+     
     {
       title: "Cart",
       subtitle: "Ecommerce",
