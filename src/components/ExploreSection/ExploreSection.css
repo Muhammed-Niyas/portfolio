@@ -1,7 +1,7 @@
 /* === Wrapper Section === */
 .explore-section-wrapper {
   background-color: #f9f6f1;
-  padding: 40px;
+  padding: 50px;
 }
 
 /* === Top Button Bar === */
@@ -57,6 +57,32 @@
 .video-btn:hover {
   background-color: #000;
   transform: scale(1.05);
+}
+.show-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.show-more-btn {
+  padding: 20px 54px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #333333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #555555;
+  transform: translateY(-2px);
+}
+
+.show-more-btn:active {
+  background-color: #222222;
+  transform: translateY(0);
 }
 
 /* Modal video section */

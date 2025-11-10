@@ -4,14 +4,14 @@ import "./ExploreSection.css";
 const ExploreSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [showAll, setShowAll] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedProject(null);
   };
-
-  const goBack = () => setSelectedProject(null); // ⬅️ Back to project list
+  const goBack = () => setSelectedProject(null);
 
   const sections = [
     {
@@ -32,14 +32,14 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-10-13 125208.png",
       link: "https://valluvanadonline.com/",
     },
-        {
-      title: "Product",
-      subtitle: "Portfolio Masal Product",
-      image: "/Screenshot 2025-11-07 175825.png",
-      link: "https://spices-lovat.vercel.app/",
-      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
-    },
+  
      {
+      title: "Hospital",
+      subtitle: "Dental",
+      image: "/Screenshot 2025-10-20 103244.png",
+      link: "https://docter-backend.vercel.app/",
+    },
+    {
       title: "Cloth",
       subtitle: "Ecommerce (Twilio OTP & Razorpay)",
       image: "/Screenshot 2025-10-29 152718.png",
@@ -47,34 +47,40 @@ const ExploreSection = () => {
       video: "/Recording 2025-10-29 154431.mp4",
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
     },
-       {
+    {
       title: "Home",
       subtitle: "Home Deccor and interier",
       image: "/Screenshot 2025-11-07 174852.png",
       link: "https://starline-nine.vercel.app/",
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
     },
-       {
+    {
       title: "cloth",
       subtitle: "Uniform",
-      image:
-        "/Screenshot 2025-11-07 175909.png",
+      image: "/Screenshot 2025-11-07 175909.png",
       link: "https://romosgarments.com/",
     },
-       {
+   
+    {
       title: "Hospital",
       subtitle: "Dental",
-      image: "/Screenshot 2025-10-20 103244.png",
-      link: "https://docter-backend.vercel.app/",
+      image: "/Screenshot 2025-11-10 161224.png",
+      link: "https://www.smilecaredubai.com/",
     },
-     
+      {
+      title: "Product",
+      subtitle: "Portfolio Masal Product",
+      image: "/Screenshot 2025-11-07 175825.png",
+      link: "https://spices-lovat.vercel.app/",
+      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
     {
       title: "Cart",
       subtitle: "Ecommerce",
       image: "/Screenshot 2025-11-07 180534.png",
       link: "https://shop.mghomecart.com/home",
     },
-        {
+    {
       title: "Agency",
       subtitle: "Online",
       image: "/Screenshot 2025-11-09 140400.png",
@@ -82,11 +88,14 @@ const ExploreSection = () => {
     },
   ];
 
+  // Determine which projects to show: either all or only first 6
+  const visibleProjects = showAll ? sections : sections.slice(0, 6);
+
   return (
     <div className="explore-section-wrapper">
       {/* 🔹 Project Grid */}
       <div className="explore-grid">
-        {sections.map((section, index) => (
+        {visibleProjects.map((section, index) => (
           <div className="explore-container" key={index}>
             <div className="explore-image">
               <a
@@ -123,12 +132,17 @@ const ExploreSection = () => {
         ))}
       </div>
 
-      {/* 🔹 Top bar button */}
-      <div className="explore-topbar">
-        <button className="next-projects-btn" onClick={openModal}>
-          Next Projects →
-        </button>
-      </div>
+      {/* 🔹 Show More / Show Less Button */}
+      {sections.length > 6 && (
+        <div className="show-more-container">
+          <button
+            className="show-more-btn"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
+        </div>
+      )}
 
       {/* 🔹 Modal */}
       {isModalOpen && (
@@ -137,7 +151,10 @@ const ExploreSection = () => {
             className="modal-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <button className="modal-close-btn" onClick={closeModal}>
+            <button
+              className="modal-close-btn"
+              onClick={closeModal}
+            >
               ×
             </button>
 
@@ -151,13 +168,21 @@ const ExploreSection = () => {
                   loop
                   muted
                 >
-                  <source src={selectedProject.video} type="video/mp4" />
+                  <source
+                    src={selectedProject.video}
+                    type="video/mp4"
+                  />
                   Your browser does not support video playback.
                 </video>
-                <p className="project-note">{selectedProject.note}</p>
-
-                {/* ⬅️ Back Button */}
-                <button className="back-btn" onClick={goBack}>
+                {selectedProject.note && (
+                  <p className="project-note">
+                    {selectedProject.note}
+                  </p>
+                )}
+                <button
+                  className="back-btn"
+                  onClick={goBack}
+                >
                   ← Back to Projects
                 </button>
               </>
@@ -166,7 +191,10 @@ const ExploreSection = () => {
                 <h2>Next Projects</h2>
                 <div className="modal-projects-grid">
                   {sections.map((section, idx) => (
-                    <div className="modal-project-card" key={idx}>
+                    <div
+                      className="modal-project-card"
+                      key={idx}
+                    >
                       <img
                         src={section.image}
                         alt={section.title}
@@ -185,7 +213,9 @@ const ExploreSection = () => {
                       {section.video && (
                         <button
                           className="small-demo-btn"
-                          onClick={() => setSelectedProject(section)}
+                          onClick={() =>
+                            setSelectedProject(section)
+                          }
                         >
                           🎬 Watch Demo
                         </button>
