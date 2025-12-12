@@ -32,13 +32,13 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-10-13 125208.png",
       link: "https://valluvanadonline.com/",
     },
-  
      {
-      title: "Hospital",
-      subtitle: "Dental",
-      image: "/Screenshot 2025-10-20 103244.png",
-      link: "https://docter-backend.vercel.app/",
+      title: "Portfolio",
+      subtitle: "Trading",
+      image: "/Tradinhg.png",
+      link: "https://luxypips.com/",
     },
+    
     {
       title: "Cloth",
       subtitle: "Ecommerce (Twilio OTP & Razorpay)",
@@ -51,7 +51,7 @@ const ExploreSection = () => {
       title: "Home",
       subtitle: "Home Deccor and interier",
       image: "/Screenshot 2025-11-07 174852.png",
-      link: "https://starline-nine.vercel.app/",
+      link: "https://starlinegroup.ae/",
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
     },
     {
@@ -73,6 +73,12 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-11-07 175825.png",
       link: "https://spices-lovat.vercel.app/",
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
+     {
+      title: "Hospital",
+      subtitle: "Dental",
+      image: "/Screenshot 2025-10-20 103244.png",
+      link: "https://docter-backend.vercel.app/",
     },
     {
       title: "Cart",
