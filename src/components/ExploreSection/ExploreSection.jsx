@@ -92,6 +92,12 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-11-09 140400.png",
       link: "https://www.sheconnect.qa/",
     },
+     {
+      title: "Agency",
+      subtitle: "Online",
+      image: "/autospill.png",
+      link: "hhttps://autoteileusedparts.com/",
+    },
   ];
 
   // Determine which projects to show: either all or only first 6
