@@ -61,12 +61,7 @@ const ExploreSection = () => {
       link: "https://romosgarments.com/",
     },
    
-    {
-      title: "Hospital",
-      subtitle: "Dental",
-      image: "/Screenshot 2025-11-10 161224.png",
-      link: "https://www.smilecaredubai.com/",
-    },
+    
       {
       title: "Product",
       subtitle: "Portfolio Masal Product",
@@ -80,6 +75,12 @@ const ExploreSection = () => {
       image: "/Screenshot 2025-10-20 103244.png",
       link: "https://docter-backend.vercel.app/",
     },
+      {
+      title: "Agency",
+      subtitle: "Online",
+      image: "/autospill.pn",
+      link: "https://autoteileusedparts.com/",
+    },
     {
       title: "Cart",
       subtitle: "Ecommerce",
@@ -89,15 +90,16 @@ const ExploreSection = () => {
     {
       title: "Agency",
       subtitle: "Online",
-      image: "/Screenshot 2025-11-09 140400.png",
+      image: "/Screenshot 2025-11-09 140400.pn",
       link: "https://www.sheconnect.qa/",
     },
-     {
-      title: "Agency",
-      subtitle: "Online",
-      image: "/autospill.png",
-      link: "hhttps://autoteileusedparts.com/",
+    {
+      title: "Hospital",
+      subtitle: "Dental",
+      image: "/Screenshot 2025-11-10 161224.pn",
+      link: "https://www.smilecaredubai.com/",
     },
+   
   ];
 
   // Determine which projects to show: either all or only first 6
