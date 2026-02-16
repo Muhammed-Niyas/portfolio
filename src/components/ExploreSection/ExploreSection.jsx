@@ -38,7 +38,12 @@ const ExploreSection = () => {
       image: "/Tradinhg.png",
       link: "https://luxypips.com/",
     },
-    
+     {
+      title: "Style",
+      subtitle: "Ecommerce (Twilio OTP & Razorpay)",
+      image: "/Screenshot 2026-02-16 170641.png",
+      link: "https://egoss-footwear.vercel.app/",
+    },
     {
       title: "Cloth",
       subtitle: "Ecommerce (Twilio OTP & Razorpay)",
@@ -61,7 +66,12 @@ const ExploreSection = () => {
       link: "https://romosgarments.com/",
     },
    
-    
+    {
+      title: "Portfolio",
+      subtitle: "Funding",
+      image: "/Screenshot 2026-02-16 171159.png",
+      link: "hhttps://ryleni-steel.vercel.app/",
+    },
       {
       title: "Product",
       subtitle: "Portfolio Masal Product",
@@ -80,12 +90,6 @@ const ExploreSection = () => {
       subtitle: "Online",
       image: "/autospill.pn",
       link: "https://autoteileusedparts.com/",
-    },
-    {
-      title: "Cart",
-      subtitle: "Ecommerce",
-      image: "/Screenshot 2025-11-07 180534.png",
-      link: "https://shop.mghomecart.com/home",
     },
     {
       title: "Agency",
