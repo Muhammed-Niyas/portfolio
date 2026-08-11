@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 
 const Projects = () => {
-  const githubUrl = "https://github.com/Niyasperumannil"; // 🔗 replace with your GitHub link
+  const githubUrl = "https://github.com/Muhammed-Niyas"; // 🔗 replace with your GitHub link
 
   return (
     <section className="projects-section">

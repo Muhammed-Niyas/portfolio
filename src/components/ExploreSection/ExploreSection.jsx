@@ -15,6 +15,130 @@ const ExploreSection = () => {
 
   const sections = [
     {
+      title: "Accounts ERP",
+      subtitle: "Enterprise Resource Planning",
+      image: "/accounts.png",
+      link: "https://your-accounts-url.com",
+    },
+    {
+      title: "CRM",
+      subtitle: "Customer Relationship Management",
+      image: "/crm.png",
+      link: "#",
+    },
+    
+    {
+      title: "Articles LedgerX",
+      subtitle: "News & Articles Platform",
+      image: "/ledger x.png",
+      link: "https://your-articles-url.com",
+    },
+ 
+    {
+      title: "Bloom Bake House",
+      subtitle: "Bakery Website",
+      image: "/bloom.png",
+      link: "https://demo.bloombakehouse.me/en",
+    },
+    {
+      title: "BPP Kuwait",
+      subtitle: "Organization Website",
+      image: "/bpp.png",
+      link: "https://bppkuwait.com/",
+    },
+    {
+      title: "Cardia HMS",
+      subtitle: "Hospital Management System",
+      image: "/ChatGPT Image Aug 10, 2026, 10_05_54 PM.png",
+      link: "https://your-cardia-url.com",
+    },
+    {
+      title: "Kabani Website",
+      subtitle: "Corporate Website",
+      image: "/kabani.png",
+      link: "https://your-kabani-url.com",
+    },
+     {
+      title: "HRMS",
+      subtitle: "Human Resource Management System",
+      image: "/hrms.png",
+      link: "#",
+    },
+    {
+      title: "MAB",
+      subtitle: "Business Portal",
+      image: "/mab.png",
+      link: "#",
+    },
+    {
+      title: "Meridian Portal",
+      subtitle: "Customer Portal",
+      image: "/meridain.png",
+      link: "https://your-meridian-url.com",
+    },
+    {
+      title: "Home",
+      subtitle: "Home Deccor and interier",
+      image: "/Screenshot 2025-11-07 174852.png",
+      link: "https://starlinegroup.ae/",
+      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
+    },
+    {
+      title: "Nice Foods",
+      subtitle: "Food & Beverage",
+      image: "/nice foods.png",
+      link: "https://www.nicefoods.in/index",
+    },
+    {
+      title: "Nutrich Society",
+      subtitle: "Community Website",
+      image: "/Screenshot 2025-11-09 140400.png",
+      link: "https://your-nutrich-url.com",
+    },
+    {
+      title: "Ociuz Academy",
+      subtitle: "Learning Platform",
+      image: "/academy.png",
+      link: "https://your-ociuzacademy-url.com",
+    },
+    {
+      title: "Ociuz Academy Website",
+      subtitle: "Educational Website",
+      image: "/academy.png",
+      link: "https://your-ociuzacademywebsite-url.com",
+    },
+    {
+      title: "Ociuz Infotech",
+      subtitle: "IT Services",
+      image: "/infotech.png",
+      link: "https://infotech.ociuz.in/",
+    },
+    {
+      title: "Ociuz NTC",
+      subtitle: "Corporate Website",
+      image: "/Screenshot 2025-11-10 161224.png",
+      link: "https://ntcfinance.in/",
+    },
+    
+    {
+      title: "Ozone",
+      subtitle: "Business Solution",
+      image: "/ozone.png",
+      link: "https://www.ozonefoodstuff.com/",
+    },
+    {
+      title: "Table UI",
+      subtitle: "UI Components",
+      image: "/Screenshot 2025-11-07 180534.png",
+      link: "https://your-table-url.com",
+    },
+    {
+      title: "WA Connect",
+      subtitle: "WhatsApp Integration",
+      image: "/wa.png",
+      link: "https://your-wa-url.com",
+    },
+    {
       title: "Dexo",
       subtitle: "Agency",
       image: "/Screenshot 2025-10-13 124805.png",
@@ -25,12 +149,6 @@ const ExploreSection = () => {
       subtitle: "Academy",
       image: "/Screenshot 2025-10-13 124939.png",
       link: "https://www.dexoacademy.com/",
-    },
-    {
-      title: "Online",
-      subtitle: "News",
-      image: "/Screenshot 2025-10-13 125208.png",
-      link: "https://valluvanadonline.com/",
     },
      {
       title: "Portfolio",
@@ -44,21 +162,9 @@ const ExploreSection = () => {
       image: "/Screenshot 2026-02-16 170641.png",
       link: "https://egoss-footwear.vercel.app/",
     },
-    {
-      title: "Cloth",
-      subtitle: "Ecommerce (Twilio OTP & Razorpay)",
-      image: "/Screenshot 2025-10-29 152718.png",
-      link: "https://mocca-store.vercel.app/",
-      video: "/Recording 2025-10-29 154431.mp4",
-      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
-    },
-    {
-      title: "Home",
-      subtitle: "Home Deccor and interier",
-      image: "/Screenshot 2025-11-07 174852.png",
-      link: "https://starlinegroup.ae/",
-      note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
-    },
+   
+    
+    
     {
       title: "cloth",
       subtitle: "Uniform",
@@ -79,29 +185,37 @@ const ExploreSection = () => {
       link: "https://spices-lovat.vercel.app/",
       note: "This is a study project demonstrating Twilio-based OTP login (works only with verified numbers).",
     },
-     {
+    {
       title: "Hospital",
       subtitle: "Dental",
       image: "/Screenshot 2025-10-20 103244.png",
       link: "https://docter-backend.vercel.app/",
     },
-      {
-      title: "Agency",
-      subtitle: "Online",
-      image: "/autospill.pn",
-      link: "https://autoteileusedparts.com/",
+    {
+      title: "Online News",
+      subtitle: "Media Portal",
+      image: "/Screenshot 2025-10-13 125208.png",
+      link: "https://valluvanadonline.com/",
+    },
+   
+  
+    {
+      title: "Dental Care Clinic",
+      subtitle: "Medical Portal",
+      image: "/Screenshot 2025-10-20 103215.png",
+      link: "#",
     },
     {
-      title: "Agency",
-      subtitle: "Online",
-      image: "/Screenshot 2025-11-09 140400.pn",
-      link: "https://www.sheconnect.qa/",
+      title: "Style & Fashion Shop",
+      subtitle: "E-commerce Portal",
+      image: "/Screenshot 2025-10-29 152700.png",
+      link: "#",
     },
     {
-      title: "Hospital",
-      subtitle: "Dental",
-      image: "/Screenshot 2025-11-10 161224.pn",
-      link: "https://www.smilecaredubai.com/",
+      title: "Gourmet Food Store",
+      subtitle: "Food & Beverage",
+      image: "/Screenshot 2025-11-07 180534.png",
+      link: "#",
     },
    
   ];
@@ -109,45 +223,83 @@ const ExploreSection = () => {
   // Determine which projects to show: either all or only first 6
   const visibleProjects = showAll ? sections : sections.slice(0, 6);
 
+  const modalProjectTitles = [
+    "Accounts ERP",
+    "Articles LedgerX",
+    "Cardia HMS",
+    "CRM",
+    "HRMS",
+    "Kabani Website",
+    "MAB",
+    "Nutrich Society"
+  ];
+
   return (
     <div className="explore-section-wrapper">
       {/* 🔹 Project Grid */}
       <div className="explore-grid">
-        {visibleProjects.map((section, index) => (
-          <div className="explore-container" key={index}>
-            <div className="explore-image">
-              <a
-                href={section.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="live-image-link"
-              >
-                <span className="live-icon">🔗</span>
-                <img
-                  src={section.image}
-                  alt={section.title}
-                  className="live-preview-image"
-                />
-              </a>
-            </div>
+        {visibleProjects.map((section, index) => {
+          const isModalProject = modalProjectTitles.includes(section.title);
+          return (
+            <div
+              className="explore-container"
+              key={index}
+              onClick={() => {
+                if (isModalProject) {
+                  setSelectedProject(section);
+                  openModal();
+                }
+              }}
+            >
+              <div className="explore-image">
+                {isModalProject ? (
+                  <div className="live-image-link">
+                    <span className="live-icon">🔍</span>
+                    <img
+                      src={section.image}
+                      alt={section.title}
+                      className="live-preview-image"
+                      loading="lazy"
+                    />
+                  </div>
+                ) : (
+                  <a
+                    href={section.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="live-image-link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <span className="live-icon">🔗</span>
+                    <img
+                      src={section.image}
+                      alt={section.title}
+                      className="live-preview-image"
+                      loading="lazy"
+                    />
+                  </a>
+                )}
+              </div>
 
-            <div className="explore-text">
-              <h1>{section.title}</h1>
-              <p>{section.subtitle}</p>
-              {section.video && (
-                <button
-                  className="video-btn"
-                  onClick={() => {
-                    setSelectedProject(section);
-                    openModal();
-                  }}
-                >
-                  🎬 Watch Demo
-                </button>
-              )}
+              <div className="explore-text">
+                <h3>{section.title}</h3>
+                <p>{section.subtitle}</p>
+                {section.video && (
+                  <button
+                    className="video-btn"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedProject(section);
+                      openModal();
+                    }}
+                  >
+                    🎬 Watch Demo
+                  </button>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
       {/* 🔹 Show More / Show Less Button */}
@@ -204,6 +356,27 @@ const ExploreSection = () => {
                   ← Back to Projects
                 </button>
               </>
+            ) : selectedProject && modalProjectTitles.includes(selectedProject.title) ? (
+              <div className="modal-project-detail" style={{ textAlign: "center" }}>
+                <h2>{selectedProject.title}</h2>
+                <p style={{ color: "#666", marginBottom: "15px" }}>{selectedProject.subtitle}</p>
+                <img
+                  src={selectedProject.image}
+                  alt={selectedProject.title}
+                  style={{ width: "100%", maxHeight: "70vh", objectFit: "contain", borderRadius: "8px" }}
+                />
+                {selectedProject.note && (
+                  <p className="project-note">
+                    {selectedProject.note}
+                  </p>
+                )}
+                <button
+                  className="back-btn"
+                  onClick={goBack}
+                >
+                  ← Back to Projects
+                </button>
+              </div>
             ) : (
               <>
                 <h2>Next Projects</h2>
@@ -220,14 +393,24 @@ const ExploreSection = () => {
                       />
                       <h3>{section.title}</h3>
                       <p>{section.subtitle}</p>
-                      <a
-                        href={section.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="modal-project-link"
-                      >
-                        Visit
-                      </a>
+                      {modalProjectTitles.includes(section.title) ? (
+                        <button
+                          className="modal-project-link"
+                          onClick={() => setSelectedProject(section)}
+                          style={{ border: "none", cursor: "pointer" }}
+                        >
+                          View
+                        </button>
+                      ) : (
+                        <a
+                          href={section.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="modal-project-link"
+                        >
+                          Visit
+                        </a>
+                      )}
                       {section.video && (
                         <button
                           className="small-demo-btn"
