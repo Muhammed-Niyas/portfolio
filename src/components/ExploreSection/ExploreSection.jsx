@@ -23,7 +23,7 @@ const ExploreSection = () => {
     {
       title: "CRM",
       subtitle: "Customer Relationship Management",
-      image: "/crm.png",
+      image: "/crmnew.png",
       link: "#",
     },
     
@@ -72,7 +72,7 @@ const ExploreSection = () => {
     },
     {
       title: "Meridian Portal",
-      subtitle: "Customer Portal",
+      subtitle: "Shipping Software",
       image: "/meridain.png",
       link: "https://your-meridian-url.com",
     },
