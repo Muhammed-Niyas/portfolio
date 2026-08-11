@@ -35,7 +35,7 @@ export default function AboutMeSection() {
         {/* Right Side - Content */}
        <div className="about-content">
   <p>
-    My name is <strong>Muhammed Niyas</strong>. I am a passionate MERN Web
+    My name is <strong>Muhammed Niyas</strong>. I am a passionate Software Web
     Developer with a strong focus on creating innovative, user-friendly, and
     high-performance web applications. I enjoy crafting seamless digital
     experiences that blend creativity with clean and efficient code.
