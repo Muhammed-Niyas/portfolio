@@ -52,7 +52,13 @@ export default function ResumeSection() {
 
   const experience = [
     {
-      year: "2025 - Present",
+      year: "Feb 2026 - Present",
+      title: "MERN Stack Developer",
+      position: "Ociuz Infotech (Thrissur, Kerala)",
+      desc: "Developing full-stack web solutions, integrating REST APIs, managing databases, and deploying scalable applications.",
+    },
+    {
+      year: "March 2025 - Feb 2026",
       title: "MERN Stack Developer",
       position: "Dexo Innovations",
       desc: "Developing full-stack web solutions, integrating REST APIs, managing databases, and deploying scalable applications.",
